@@ -14,4 +14,6 @@ public class Task implements Runnable{
 			index++;
 		}
 	}
+	
+	//public static void main(String[] args) {}
 }

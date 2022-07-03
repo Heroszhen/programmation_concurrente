@@ -11,7 +11,7 @@ public class Main {
 		Task ta3 = new Task("websocket");
 		Thread t3 = new Thread(ta3);
 		
-		System.out.println("resultat");
+		System.out.println("résultat");
 		
 		t1.start();
 		//t1.yield();
@@ -21,8 +21,6 @@ public class Main {
 		t3.start();
 		//t3.yield();
 		
-		
-		return;
 	}
 
 }
