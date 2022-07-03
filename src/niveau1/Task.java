@@ -9,7 +9,7 @@ public class Task implements Runnable{
 	
 	public void run() {
 		int index = 0;
-		while (!Thread.interrupted() && index < 3) {
+		while (!Thread.interrupted() && index < 1) {
 			System.out.println(this.title);
 			index++;
 		}
