@@ -2,7 +2,6 @@ package niveau1;
 
 public class Main {
 
-	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
 		Task ta1 = new Task("email");
 		Thread t1 = new Thread(ta1);
