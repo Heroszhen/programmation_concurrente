@@ -35,16 +35,15 @@ class Producer implements Runnable {
 			}
 			
 			if (this.buffer.tab.size() < this.buffer.arrayLength) {
-				nb = (int)Math.floor(Math.random() * (50 - 10 + 1) + 10);
+				nb = (int)Math.floor(Math.random() * (100 - 10 + 1) + 10);
 				this.buffer.tab.add(nb);
 				System.out.println("Producer " + this.id + " add " + nb);
+				index++;
 			} else {
 				System.out.println("Producer " + this.id + ": the buffer is full");
 				break;
 			}
 			Thread.yield();
-			
-			this.nb++;
 		}
 	}
 	
