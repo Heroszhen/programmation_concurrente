@@ -20,7 +20,6 @@ class Buffer {
 			}
 		}
 		
-		
 		return null;
 	}
 	
@@ -52,6 +51,7 @@ class Producer implements Runnable {
 		this.id = id;
 		this.nb = nb;
 		this.buffer = buffer;
+		System.out.println("Producer " + id + " is created ");
 	}
 
 	@Override
@@ -90,6 +90,7 @@ class Consumer implements Runnable{
 	public Consumer (Buffer buffer, int id) {
 		this.buffer = buffer;
 		this.id = id;
+		System.out.println("Consumer " + id + " is created ");
 	}
 	
 	public void run() {
@@ -108,7 +109,7 @@ class Consumer implements Runnable{
 public class Exo5 {
 
 	public static void main(String[] args) throws InterruptedException {
-		Buffer buffer = new Buffer(4);
+		Buffer buffer = new Buffer(3);
 		
 		Producer tr1, tr2, tr3;
 		Thread t1, t2, t3;
