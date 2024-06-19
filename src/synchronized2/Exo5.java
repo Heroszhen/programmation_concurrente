@@ -20,6 +20,7 @@ class Buffer {
 			}
 		}
 		
+		
 		return null;
 	}
 	
@@ -123,7 +124,7 @@ public class Exo5 {
 		t3.start();
 	
 		
-		for (int i = 0; i < 9; i++) {
+		for (int i = 0; i < 6; i++) {
 			Thread t = new Thread(new Consumer(buffer, i + 1));
 			t.start();
 		}
