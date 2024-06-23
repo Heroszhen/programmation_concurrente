@@ -1,0 +1,10 @@
+-Thread
+interface Runnable avec la method run()
+Thread.sleep(n) , Thread.yield()
+Thread.interrupted() , (new Thread()).interrupt()
+
+-synchronized : un seul passager, entrer un par un
+
+- wait
+ob = new Object();
+ob.wait(), ob.notify(), ob.notifyAll()
